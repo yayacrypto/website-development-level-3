@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Tracker | Level 3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page tracker">
+    <p class="eyebrow">LEVEL 03 + AI</p>
+    <h1>Study tracker</h1>
+    <p class="tip" id="tip">Loading a study tip...</p>
+
+    <form id="add-form" class="add">
+      <label for="new-task" class="visually-hidden">New task</label>
+      <input id="new-task" type="text" placeholder="What will you study?" maxlength="80" autocomplete="off" required>
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filters" role="group" aria-label="Filter tasks">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="active" aria-pressed="false">Active</button>
+      <button type="button" data-filter="done" aria-pressed="false">Done</button>
+    </div>
+
+    <ul id="task-list" class="tasks"></ul>
+    <p id="summary" class="summary" role="status"></p>
+    <footer>AI can suggest. You decide, understand, and test.</footer>
+  </main>
+</body>
+</html>
